@@ -1,0 +1,79 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Arimo', 'Helvetica', 'Verdana', sans-serif;
+    background-color: #E9EEF5;
+}
+.section {
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
+    
+}
+.wrapper{
+    font-size: 1.8rem;/*18px*/
+    margin-top: 50px;
+    background-color: white;
+    padding: 30px;
+    -moz-box-shadow: -1px 5px 12px 2px rgba(34, 60, 80, 0.26);
+    box-shadow: -1px 5px 12px 2px rgba(34, 60, 80, 0.26);
+}
+.info{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.info input{
+ width: 100%;
+ line-height: 4.0rem;
+ border-radius: 20px;
+ padding: 0 15px;
+
+}
+.infoText{
+  display: block;
+  padding-left: 15px;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+.error {
+border-color: red;
+}
+.error_text{
+    color: red;
+}
+.button__colored{
+    display: block;
+    width: 100%;
+    padding: 0 15px;
+    margin: 10px 0 15px;
+    line-height: 4.0rem;
+    border-radius: 20px;
+}
+.paymant__text{
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: #85888C;
+}
+.gifts__text{
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: #85888C;
+}
+.title{
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    text-align: center;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5.0rem;
+    color: #85888C;
+}
+
+.info__item{
+    margin: 30px;
+}

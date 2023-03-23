@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Books Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="normilize.css" />
+    <link rel="stylesheet" href="order.css" />
+  </head>
+  <body>
+    <section class="section">
+      <div class="wrapper">
+        <form
+          action="http://127.0.0.1:5500/order.html"
+          name="info"
+          method="post"
+        >
+          <h1 class="title">Order form</h1>
+          <div class="info">
+            <div class="info__item name">
+              <label for="name">
+                <span class="infoText">Name</span>
+                <input
+                  data-min-name="4"
+                  id="name"
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+              /></label>
+            </div>
+            <div class="info__item surname">
+              <label for="surname"
+                ><span class="infoText">Surname</span>
+                <input
+                  data-min-surname="5"
+                  id="surname"
+                  type="text"
+                  name="surname"
+                  placeholder="Surname"
+              /></label>
+            </div>
+            <div class="info__item street">
+              <label for="street">
+                <span class="infoText">Street</span>
+                <input
+                  data-min-street="5"
+                  id="street"
+                  type="text"
+                  name="street"
+                  placeholder="Street"
+                />
+              </label>
+            </div>
+            <div class="info__item house-number">
+              <label for="house-number">
+                <span class="infoText">House number</span>
+                <input
+                  id="house-number"
+                  type="text"
+                  name="house-number"
+                  placeholder="House number"
+              /></label>
+            </div>
+            <div class="info__item flat">
+              <label for="flat"
+                ><span class="infoText">Flat</span>
+                <input id="flat" type="text" name="flat" placeholder="Flat"
+              /></label>
+            </div>
+            <div class="info__item delivery">
+              <label for="delivery"
+                ><span class="infoText">Delivery</span>
+                <input id="delivery" type="date" name="delivery"
+              /></label>
+            </div>
+          </div>
+          <div class="payment__wrapper">
+            <legend class="paymant__text">Choose the payment type:</legend>
+            <p>
+              <label for="cash"
+                ><input type="radio" id="cash" name="payment" value="cash" />
+                Cash</label
+              >
+            </p>
+            <p>
+              <label for="card"
+                ><input type="radio" id="card" name="payment" value="card" />
+                Card</label
+              >
+            </p>
+          </div>
+          <div class="gifts">
+            <legend class="gifts__text">Choose 2 gifts:</legend>
+            <p>
+              <input
+                type="checkbox"
+                id="gift1"
+                name="gift"
+                value="pack as a gift"
+              />
+              <label for="gift1">pack as a gift</label>
+            </p>
+            <p>
+              <input
+                type="checkbox"
+                id="gift2"
+                name="gift"
+                value="add postcard"
+              />
+              <label for="gift2">add postcard</label>
+            </p>
+            <p>
+              <input
+                type="checkbox"
+                id="gift3"
+                name="gift"
+                value="2% discount to the next time"
+              />
+              <label for="gift3"> provide 2% discount to the next time</label>
+            </p>
+            <p>
+              <input
+                type="checkbox"
+                id="gift4"
+                name="gift"
+                value="branded pen or pencil"
+              />
+              <label for="gift4"> branded pen or pencil</label>
+            </p>
+          </div>
+          <button type="submit" class="complete button__colored" disabled>
+            Complete
+          </button>
+        </form>
+      </div>
+      <div class="summaryInfo"></div>
+    </section>
+    <script src="order.js"></script>
+  </body>
+</html>

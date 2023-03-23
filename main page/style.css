@@ -1,0 +1,206 @@
+html {
+   font-size: 10px;
+}
+
+body {
+   font-family: 'Arimo', 'Helvetica', 'Verdana', sans-serif;
+   background-color:#E9EEF5;
+}
+.wrapper{
+   
+   max-width: 1400px;
+   width: 100%;
+   margin: auto;
+}
+
+.header__title {
+   text-transform: uppercase;
+   letter-spacing: 30px;
+   text-align: center;
+   font-weight: 400;
+   font-style: normal;
+   font-size: 5.0rem;
+   /*50px*/
+   color: #85888C;
+  -moz-box-shadow: 0px 5px 10px 2px rgba(132, 144, 154, 0.2);
+   box-shadow: 0px 5px 10px 2px rgba(132, 144, 154, 0.2);
+}
+.section{
+   margin-top: 80px;
+   display: flex;
+   gap:20px;
+   justify-content: space-between;
+}
+.books__wrapper {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 30px;
+   margin: auto;
+   width: 100%;
+}
+.book__wrapper {
+   position: relative;
+   background-color: white;
+   padding: 20px;
+   text-align: center;
+}
+.book__img {
+   position: relative;
+   width: 80%;
+   margin: auto;
+   cursor: move;
+}
+.image {
+   display: block;
+   width: 100%;
+}
+.book__content {
+   max-width: 200px;
+   font-size: 1.4rem;
+   /*14px*/
+   margin: auto;
+}
+.book__title {
+   font-size: 1.5rem;
+   /*14px*/
+   text-align: left;
+   margin-bottom: 2px;
+}
+.book__author{
+   margin-top: 2px;
+   text-align: left;
+}
+.book__price{
+   font-size: 1.6rem;
+   margin-bottom: 8px;
+}
+
+.button__colored {
+   border: none;
+   font-size: 1.2rem;
+   border-radius: 20px;
+   color: black;
+   cursor: pointer;
+   padding: 10px 66px;
+   background-color: #E9EEF5;
+}
+.button__colored:hover {
+background-color: #CED2D9;
+}
+
+.button {
+   display: inline;
+}
+
+
+/*Basket*/
+.basket__wrapper {
+   max-width: 380px;
+   min-height: 150px;
+   height: 50%;
+   width: 100%;
+   background-color: white;
+   padding: 20px;
+   border: 1px solid gray;
+   border-radius: 10px;
+   font-size: 1.3rem;
+}
+
+.basket__goods{
+   margin: 10px 0;
+   min-height: 400px;
+}
+.book__info{
+   font-size: 1.2rem;
+   max-width:400px;
+   margin: 5px 10px;
+}
+.basket__img{
+   display: inline-block;
+   max-width: 80px;
+}
+.basket__content{
+   display: inline-block;
+   margin: 10px;
+}
+.basket__title{
+   max-width: 200px;
+   margin: 0;
+}
+
+.basket__author{
+   margin: 0;
+   font-size: 1.1rem;
+}
+.basket__count{
+display: inline-block;
+margin-bottom: 2px;
+
+}
+.button__delete{
+ float: right;
+}
+.button__del_colored{
+   border: none;
+   background-color: transparent;
+   cursor: pointer;
+   border-radius: 40px;
+}
+.button__order_colored {
+   border: none;
+   font-size: 1.5rem;
+   border-radius: 20px;
+   background-color: #E9EEF5;
+   color: black;
+   cursor: pointer;
+   padding: 10px 86px;
+   margin-top: 20px;
+}
+.total__text{
+   text-transform: uppercase;
+}
+
+/*Popup*/
+.open__popup {
+   margin-top: 20px;
+}
+.button__popup{
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+.button__popup:hover{
+   border:1px solid #85888C;
+}
+.popup__content{
+   position: absolute;
+   opacity: 0;
+   width: 300px;
+   text-align: left;
+   background-color: #B3B7BD;
+   border-radius: 10px;
+   font-style:italic;
+}
+.popup__title{
+   margin: 10px 40px 0 10px;
+}
+.close__popup{
+   float: right;
+   font-size: 1.5rem;
+   margin: 5px;
+   border: none;
+   background-color: transparent;
+   cursor: pointer;
+}
+
+.open{
+   opacity: 1;
+   z-index: 1;
+}
+.popup__description{
+   padding: 10px;
+   margin-top: 0;
+}
+
+
+
+
